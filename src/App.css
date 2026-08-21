@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #f4f4f4;
+  font-family: Georgia, serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navigation */
+
+nav {
+  background: white;
+  padding: 20px 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* Hero Section */
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #495E57;
+  padding: 3rem;
+}
+
+.hero-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+  max-width: 400px;
+}
+
+.hero h1 {
+  color: #F4CE14;
+  font-size: 64px;
+}
+
+.hero h2 {
   color: white;
+  font-size: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.hero p {
+  font-size: 1.3rem;
+  line-height: 1.6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero button {
+  background-color: #f4ce14;
+  color: black;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 180px;
+}
+
+.hero img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: -80px;
+}
+
+
+/* Specials Section */
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 120px auto 50px;
+}
+
+.specials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  background: #edefee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hero button {
+    margin: auto;
+  }
+
+  .specials {
+    grid-template-columns: 1fr;
+  }
+
+  .specials-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
   }
 }
