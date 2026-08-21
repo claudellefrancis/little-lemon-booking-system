@@ -1,9 +1,13 @@
+import restaurantFood from '../images/restaurantFood.jpg';
+
 function Section() {
     return (
        <section className="hero">
-        <div className="hero-text">
-          <h1>Little Lemon Restaurant</h1>
-          <h2>Chicago</h2>
+        <div className="hero-content">
+
+          <div className="hero-text">
+            <h1>Little Lemon Restaurant</h1>
+            <h2>Chicago</h2>
 
           <p>
             We are a family owned Mediterranean restaurant,
@@ -11,6 +15,12 @@ function Section() {
           </p>
 
           <button>Reserve a Table</button>
+        </div>
+
+        <div className="hero-image">
+          <img src={restaurantFood} alt="Restaurant Food" />
+        </div>
+
         </div>
       </section>
     );

@@ -1,15 +1,13 @@
 import Nav from './Nav';
-import './Header.css';
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 function Header() {
   return (
     <header>
-      <div className="logo-title">
-      </div>
-      <div>
+      <div className='logo'>
+        <img src={logo} alt="logo" className="logo" />
+        </div>
         <Nav />
-      </div>
     </header>
   );
 }

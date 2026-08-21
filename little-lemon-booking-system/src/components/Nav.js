@@ -1,10 +1,9 @@
-import './Nav';
+
 
 function Nav() {
   return (
 
     <header>
-      <h1>Little Lemon Restaurant</h1>
     <nav>
       <ul className="nav-links">
         <li><a href="#home">Home</a></li>

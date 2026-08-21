@@ -1,5 +1,5 @@
 import greekSalad from "../images/greekSalad.jpg";
-import bruschetta from "../images/bruschetta.svg";
+import bruchetta from "../images/bruchetta.svg";
 import lemonDessert from "../images/lemonDessert.jpg";
 
 function Article() {
@@ -11,13 +11,14 @@ function Article() {
       </div>
 
       <div className="specials-cards">
-        <div className="card">
-          {greekSalad}
+
+        <article className="card">
+          <img src={greekSalad} alt="greek-salad" />
 
           <div className="card-content">
-            <div className="card-heading">
+            <div className="card-title">
               <h3>Greek Salad</h3>
-              <span className="price">$12.99</span>
+              <span>$12.99</span>
             </div>
 
             <p>
@@ -27,33 +28,33 @@ function Article() {
 
             <h4>Order a delivery 🚴</h4>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
-          {bruschetta}
+        <article className="card">
+          <img src={bruchetta} alt="bruchetta" />
 
           <div className="card-content">
-            <div className="card-heading">
-              <h3>Bruschetta</h3>
-              <span className="price">$5.99</span>
+            <div className="card-title">
+              <h3>Bruchetta</h3>
+              <span>$5.99</span>
             </div>
 
             <p>
-              Our Bruschetta is made from grilled bread that has
+              Our Bruchetta is made from grilled bread that has
               been smeared with garlic and seasoned with salt and olive oil.
             </p>
 
             <h4>Order a delivery 🚴</h4>
           </div>
-        </div>
+        </article>
 
-        <div className="card">
-          {lemonDessert}
+        <article className="card">
+          <img src={lemonDessert} alt="lemon-dessert"/>
 
           <div className="card-content">
-            <div className="card-heading">
+            <div className="card-title">
               <h3>Lemon Dessert</h3>
-              <span className="price">$5.00</span>
+              <span>$5.00</span>
             </div>
 
             <p>
@@ -63,7 +64,7 @@ function Article() {
 
             <h4>Order a delivery 🚴</h4>
           </div>
-        </div>
+        </article>
       </div>
     </article>
   );
