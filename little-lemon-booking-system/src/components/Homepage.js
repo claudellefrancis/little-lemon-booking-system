@@ -7,7 +7,6 @@ function Homepage() {
     <>
       <Header />
       <Article />
-      <Main />
     </>
   );
 }
