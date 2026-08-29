@@ -14,9 +14,13 @@
 ========================= */
 
 body {
-  background-color: white;
-  color: #333;
-  font-family: Arial, sans-serif;
+  background: #edefee;
+  font-family: Karla, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin:0 auto;
 }
 
 
@@ -24,22 +28,18 @@ body {
    HEADER
 ========================= */
 
-header {
-  width: 80%;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1000px;
   margin: 0 auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 15px 0;
+  padding: 20px;
 }
 
-.logo img {
-  width: 140px;
+.logo {
+  width: 250px;
   height: auto;
-  display: block;
 }
 
 
@@ -69,6 +69,19 @@ nav {
 
 .nav-links a:hover {
   color: #495e57;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 
@@ -178,8 +191,8 @@ nav {
 /* Hero image */
 
 .hero-image {
-  width: 270px;
-  height: 285px;
+  width: 500px;
+  height: 250px;
 
   object-fit: cover;
 
@@ -190,6 +203,7 @@ nav {
   right: 200px;
   top: 22px;
 }
+
 
 
 /* =========================
