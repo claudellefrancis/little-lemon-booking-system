@@ -6,6 +6,17 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
 body {
   background-color: #f4f4f4;
   font-family: Georgia, serif;
@@ -105,6 +116,12 @@ nav a {
   background: #edefee;
   padding: 20px;
   border-radius: 10px;
+}
+
+.card img {
+  height: 250px;
+  width: 100%;
+  object-fit: auto;
 }
 
 /* Responsive */

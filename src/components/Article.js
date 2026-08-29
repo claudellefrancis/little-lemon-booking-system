@@ -12,7 +12,7 @@ function Article() {
 
       <div className="specials-cards">
         <div className="card">
-          {greekSalad}
+          <img src=ad}
 
           <div className="card-content">
             <div className="card-heading">

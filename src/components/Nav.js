@@ -1,4 +1,3 @@
-import './Nav';
 
 function Nav() {
   return (
