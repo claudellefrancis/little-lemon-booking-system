@@ -1,38 +1,57 @@
 import greekSalad from "../images/greekSalad.jpg";
-import bruschetta from "../images/bruschetta.svg";
+import bruschetta from "../images/bruschetta.png";
 import lemonDessert from "../images/lemonDessert.jpg";
 
 function Article() {
   return (
-    <article className="specials">
+    <section className="specials-section">
+
+      {/* Specials heading */}
       <div className="specials-header">
         <h2>This week's specials!</h2>
+
         <button>Online Menu</button>
       </div>
 
+      {/* Cards */}
       <div className="specials-cards">
+
+        {/* Greek Salad */}
         <div className="card">
-          <img src=ad}
+
+          <img
+            src={greekSalad}
+            alt="Greek Salad"
+          />
 
           <div className="card-content">
+
             <div className="card-heading">
-              <h3>Greek Salad</h3>
+              <h3>Greek salad</h3>
               <span className="price">$12.99</span>
             </div>
 
             <p>
-              The famous greek salad of crispy lettuce, peppers,
-              olives and our Chicago style feta cheese.
+              The famous greek salad of crispy lettuce,
+              peppers, olives and our Chicago style feta cheese.
             </p>
 
             <h4>Order a delivery 🚴</h4>
+
           </div>
         </div>
 
+
+        {/* Bruschetta */}
         <div className="card">
-          {bruschetta}
+
+          <img
+            src={bruschetta}
+            alt="Bruschetta"
+          />
 
           <div className="card-content">
+
             <div className="card-heading">
               <h3>Bruschetta</h3>
               <span className="price">$5.99</span>
@@ -44,13 +63,21 @@ function Article() {
             </p>
 
             <h4>Order a delivery 🚴</h4>
+
           </div>
         </div>
 
+
+        {/* Lemon Dessert */}
         <div className="card">
-          {lemonDessert}
+
+          <img
+            src={lemonDessert}
+            alt="Lemon Dessert"
+          />
 
           <div className="card-content">
+
             <div className="card-heading">
               <h3>Lemon Dessert</h3>
               <span className="price">$5.00</span>
@@ -62,10 +89,13 @@ function Article() {
             </p>
 
             <h4>Order a delivery 🚴</h4>
+
           </div>
         </div>
+
       </div>
-    </article>
+
+    </section>
   );
 }
 

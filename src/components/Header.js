@@ -4,10 +4,11 @@ import logo from '../images/logo.png';
 function Header() {
   return (
     <header>
-      {logo}
-        <div>
-          Nav />
-        </div>
+      <div className="logo">
+        <img src={logo} alt="Little Lemon Logo" />
+      </div>
+
+      <Nav />
     </header>
   );
 }
