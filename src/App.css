@@ -102,8 +102,8 @@ nav {
 
   display: flex;
   flex-direction: column;
-
   gap: 5px;
+
 }
 
 .hero h1 {
@@ -135,6 +135,22 @@ nav {
   margin-bottom: 5px;
 }
 
+.hero-image {
+  width: 90%;
+  max-width: 1080px;
+  height: 247px;
+
+  margin: 0 auto;
+
+  background-color: #495e57;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  padding-left: 220px;
+}
 
 /* Reserve button */
 
@@ -158,7 +174,6 @@ nav {
 .hero button:hover {
   background-color: #e5bd08;
 }
-
 
 /* Hero image */
 

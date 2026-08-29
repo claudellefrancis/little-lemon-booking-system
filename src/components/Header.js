@@ -8,6 +8,10 @@ function Header() {
         <img src={logo} alt="Little Lemon Logo" />
       </div>
 
+      <div>
+        <h1>Little Lemon Restaurant</h1>
+        </div>
+
       <Nav />
     </header>
   );
