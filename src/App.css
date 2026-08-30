@@ -1,412 +1,143 @@
-/* =========================
-   RESET
-========================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-/* =========================
-   BODY
-========================= */
-
 body {
-  background: #edefee;
-  font-family: Karla, sans-serif;
+  margin: 0;
+  background-color: #edefee;
+  font-family: Arial, sans-serif;
 }
-
-.container {
-  max-width: 1200px;
-  margin:0 auto;
-}
-
-
-/* =========================
-   HEADER
-========================= */
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem 8rem;
-}
-
-.logo {
-  width: 250px;
-  height: auto;
-}
-
-
-/* =========================
-   NAVIGATION
-========================= */
-
-nav {
+  padding: 20px 80px;
   background-color: white;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-
-  list-style: none;
+.header img {
+  height: 50px;
 }
 
-.nav-links a {
-  text-decoration: none;
-  color: #222;
+/* HERO SECTION */
 
-  font-size: 15px;
+.hero {
+  background-color: #495e57;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 80px;
+  min-height: 300px;
+  position: relative;
+}
+
+.hero-text {
+  max-width: 300px;
+}
+
+.hero-text h1 {
+  color: #f4ce14;
+  font-size: 64px;
+  margin: 0;
+}
+
+.hero-text h2 {
+  color: white;
+  font-size: 32px;
+  margin-top: -10px;
+}
+
+.hero-text p {
+  color: white;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.hero-text button {
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 12px;
+  padding: 15px 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-image img {
+  width: 350px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  position: relative;
+  top: 30px;
+}
+
+/* SPECIALS */
+
+.specials {
+  max-width: 1100px;
+  margin: 100px auto;
+}
+
+.specials-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.specials-header h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.specials-header button {
+  background-color: #f4ce14;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
   font-weight: bold;
 }
 
-.nav-links a:hover {
-  color: #495e57;
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: #edefee;
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card-header span {
+  color: #ee9972;
+  font-weight: bold;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  line-height: 1.5;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 30px
 }
 
 nav a {
-  text-decoration: none;
+  test-decoration: none;
   color: black;
   font-weight: bold;
-}
-
-
-/* =========================
-   HERO
-========================= */
-
-.hero {
-  background-color: #495e57;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 8rem;
-  position: relative;
-}
-
-
-/* Hero text */
-
-.hero-text {
-  width: 270px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-}
-
-.hero h1 {
-  color: #f4ce14;
-
-  font-family: Georgia, serif;
-
-  font-size: 38px;
-  line-height: 1.1;
-}
-
-.hero h2 {
-  color: white;
-
-  font-family: Georgia, serif;
-
-  font-size: 22px;
-
-  margin-bottom: 8px;
-}
-
-.hero p {
-  color: white;
-
-  font-size: 14px;
-
-  line-height: 1.4;
-
-  margin-bottom: 5px;
-}
-
-/* Reserve button */
-
-.hero button {
-  width: 150px;
-
-  background-color: #f4ce14;
-
-  border: none;
-  border-radius: 12px;
-
-  padding: 11px 18px;
-
-  color: black;
-
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
-.hero button:hover {
-  background-color: #e5bd08;
-}
-
-/* Hero image */
-
-.hero-image {
-  width: 300px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 16px;
-  position: relative;
-  top: 40px;
-}
-
-
-
-/* =========================
-   SPECIALS SECTION
-========================= */
-
-.specials-section {
-  width: 80%;
-  max-width: 700px;
-
-  margin: 100px auto 0;
-}
-
-
-/* Specials heading */
-
-.specials-header {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  margin-bottom: 35px;
-}
-
-.specials-header h2 {
-  font-family: Georgia, serif;
-
-  font-size: 34px;
-
-  color: #111;
-}
-
-.specials-header button {
-  background-color: #f4ce14;
-
-  border: none;
-  border-radius: 12px;
-
-  padding: 14px 25px;
-
-  font-weight: bold;
-
-  cursor: pointer;
-}
-
-.specials-header button:hover {
-  background-color: #e5bd08;
-}
-
-
-/* =========================
-   SPECIALS CARDS
-========================= */
-
-.specials-cards {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 25px;
-}
-
-
-/* Individual card */
-
-.card {
-  background-color: #edefee;
-
-  overflow: hidden;
-
-  min-height: 405px;
-}
-
-
-/* Card image */
-
-.card > img {
-  width: 100%;
-  height: 170px;
-
-  object-fit: cover;
-
-  display: block;
-}
-
-
-/* Card content */
-
-.card-content {
-  padding: 15px 18px;
-}
-
-
-/* Card heading */
-
-.card-heading {
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  margin-bottom: 15px;
-}
-
-.card-heading h3 {
-  font-family: Georgia, serif;
-
-  font-size: 16px;
-
-  color: #222;
-}
-
-.price {
-  color: #ee8a65;
-
-  font-weight: bold;
-
-  font-size: 13px;
-}
-
-
-/* Card description */
-
-.card-content p {
-  color: #555;
-
-  font-size: 13px;
-
-  line-height: 1.4;
-
-  margin-bottom: 35px;
-}
-
-
-/* Delivery */
-
-.card-content h4 {
-  font-size: 13px;
-
-  color: #222;
-
-  margin-top: auto;
-}
-
-
-/* =========================
-   FOOTER
-========================= */
-
-footer {
-  width: 80%;
-  max-width: 700px;
-
-  margin: 60px auto 20px;
-
-  text-align: center;
-
-  font-size: 13px;
-}
-
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-  header {
-    width: 90%;
-  }
-
-  .hero {
-    width: 95%;
-    padding-left: 50px;
-  }
-
-  .hero-image {
-    right: 50px;
-  }
-
-  .specials-section {
-    width: 90%;
-  }
-}
-
-
-@media (max-width: 768px) {
-
-  header {
-    flex-direction: column;
-
-    gap: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    gap: 15px;
-  }
-
-  .hero {
-    height: auto;
-
-    flex-direction: column;
-
-    text-align: center;
-
-    padding: 40px 20px;
-
-    gap: 30px;
-  }
-
-  .hero-text {
-    align-items: center;
-  }
-
-  .hero-image {
-    position: static;
-
-    width: 280px;
-    height: 300px;
-  }
-
-  .specials-header {
-    flex-direction: column;
-
-    gap: 20px;
-
-    text-align: center;
-  }
-
-  .specials-cards {
-    grid-template-columns: 1fr;
-  }
 }
