@@ -32,9 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+  padding: 1rem 8rem;
 }
 
 .logo {
@@ -74,8 +72,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 30px;
-  align-items: center;
+  gap: 2rem;
 }
 
 nav a {
@@ -90,21 +87,12 @@ nav a {
 ========================= */
 
 .hero {
-  width: 90%;
-  max-width: 1080px;
-
-  height: 247px;
-
-  margin: 0 auto;
-
   background-color: #495e57;
-
   display: flex;
+  justify-content: space-between;
   align-items: center;
-
+  padding: 2rem 8rem;
   position: relative;
-
-  padding-left: 220px;
 }
 
 
@@ -148,23 +136,6 @@ nav a {
   margin-bottom: 5px;
 }
 
-.hero-image {
-  width: 90%;
-  max-width: 1080px;
-  height: 247px;
-
-  margin: 0 auto;
-
-  background-color: #495e57;
-
-  display: flex;
-  align-items: center;
-
-  position: relative;
-
-  padding-left: 220px;
-}
-
 /* Reserve button */
 
 .hero button {
@@ -191,17 +162,12 @@ nav a {
 /* Hero image */
 
 .hero-image {
-  width: 500px;
-  height: 250px;
-
+  width: 300px;
+  height: 350px;
   object-fit: cover;
-
-  border-radius: 15px;
-
-  position: absolute;
-
-  right: 200px;
-  top: 22px;
+  border-radius: 16px;
+  position: relative;
+  top: 40px;
 }
 
 
